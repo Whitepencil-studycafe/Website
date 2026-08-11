@@ -166,53 +166,23 @@ body{font-family:'Noto Sans KR',sans-serif;display:flex;flex-direction:column;}
     <iframe src="https://yoosangbeom.github.io/refund-calculator/" title="환불 계산기" loading="lazy"></iframe>
   </div>
 
-  <!-- 가산 -->
+  <!-- 오늘의 한마디 / 랭킹: 3지점 통합 데이터라 지점 구분 없이 하나씩만 -->
   <div class="iframe-panel" id="panel-gasan-postit">
-    <iframe data-src="https://script.google.com/macros/s/AKfycbzcKku8quWmaDOQHiVPAoW-iqUAFzusXM9UuDmI7w6tkaHnmWWA3fg9bXTvshMOBk9F/exec?page=postit" title="가산 한마디"></iframe>
+    <iframe data-src="https://script.google.com/macros/s/AKfycbzcKku8quWmaDOQHiVPAoW-iqUAFzusXM9UuDmI7w6tkaHnmWWA3fg9bXTvshMOBk9F/exec?page=postit" title="오늘의 한마디"></iframe>
   </div>
   <div class="iframe-panel" id="panel-gasan-att">
-    <iframe data-src="https://script.google.com/macros/s/AKfycbzcKku8quWmaDOQHiVPAoW-iqUAFzusXM9UuDmI7w6tkaHnmWWA3fg9bXTvshMOBk9F/exec?page=rank_only" title="가산 출석체크"></iframe>
-  </div>
-
-  <!-- 금천 -->
-  <div class="iframe-panel" id="panel-geumcheon-postit">
-    <iframe data-src="https://script.google.com/macros/s/AKfycbzxQiB04tHAmSmokQWb0vxSxw0r_hipgxQcOZAaZja2AvF6pOig8WvOOiukXZbXwOBV/exec?page=postit" title="금천 한마디"></iframe>
-  </div>
-  <div class="iframe-panel" id="panel-geumcheon-att">
-    <iframe data-src="https://script.google.com/macros/s/AKfycbzxQiB04tHAmSmokQWb0vxSxw0r_hipgxQcOZAaZja2AvF6pOig8WvOOiukXZbXwOBV/exec?page=rank_only" title="금천 출석체크"></iframe>
-  </div>
-
-  <!-- 구로 -->
-  <div class="iframe-panel" id="panel-guro-postit">
-    <iframe data-src="https://script.google.com/macros/s/AKfycbyQbwTVvf31E-0gCrGZQoNo-2TD9JQrVnbS7Ux_nrZPtY33xKlzeYx4X0kjKMPOde9aHA/exec?page=postit" title="구로 한마디"></iframe>
-  </div>
-  <div class="iframe-panel" id="panel-guro-att">
-    <iframe data-src="https://script.google.com/macros/s/AKfycbyQbwTVvf31E-0gCrGZQoNo-2TD9JQrVnbS7Ux_nrZPtY33xKlzeYx4X0kjKMPOde9aHA/exec?page=rank_only" title="구로 출석체크"></iframe>
+    <iframe data-src="https://script.google.com/macros/s/AKfycbzcKku8quWmaDOQHiVPAoW-iqUAFzusXM9UuDmI7w6tkaHnmWWA3fg9bXTvshMOBk9F/exec?page=rank_only" title="이달의 랭킹"></iframe>
   </div>
 
 </div>
 
-<!-- 하단 탭바 : 지점별 한마디 + 출석체크 -->
+<!-- 하단 탭바 : 오늘의 한마디 + 랭킹 (3지점 통합) -->
 <nav class="bottom-tab-bar">
   <button class="bottom-tab-btn bg-gasan" onclick="switchBottom('gasan-postit')" id="btab-gasan-postit">
-    가산한마디
+    한마디
   </button>
   <button class="bottom-tab-btn bg-gasan" onclick="switchBottom('gasan-att')" id="btab-gasan-att">
-    가산랭킹
-  </button>
-  <div class="divider"></div>
-  <button class="bottom-tab-btn bg-geumcheon" onclick="switchBottom('geumcheon-postit')" id="btab-geumcheon-postit">
-    금천한마디
-  </button>
-  <button class="bottom-tab-btn bg-geumcheon" onclick="switchBottom('geumcheon-att')" id="btab-geumcheon-att">
-    금천랭킹
-  </button>
-  <div class="divider"></div>
-  <button class="bottom-tab-btn bg-guro" onclick="switchBottom('guro-postit')" id="btab-guro-postit">
-    구로한마디
-  </button>
-  <button class="bottom-tab-btn bg-guro" onclick="switchBottom('guro-att')" id="btab-guro-att">
-    구디랭킹
+    랭킹
   </button>
 </nav>
 
